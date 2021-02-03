@@ -66,6 +66,8 @@ img {
   color: var(--link-color);
   font-family: var(--logo-font);
   font-style: normal;
+
+  
 }
 .logo-link-dark-theme {
   color: var(--text-color-accent);
