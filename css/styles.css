@@ -94,9 +94,12 @@ img {
 .auth-nav {
   display: flex;
   margin-left: auto;
+  
 }
-.tel-link,
-.mail-link:not(:last-child) {
+.auth-nav-list{
+  display: flex;
+}
+.auth-nav-item:not(:last-child) {
   margin-right: 50px;
 }
 .navigation {
@@ -370,7 +373,7 @@ img {
  
 }
 .our-team-text{
-  padding: 30px;32px;
+  padding: 30px 32px;
 }
 /*==============End About-us,Our-team=======*/
 
@@ -394,15 +397,24 @@ img {
 .buttons-list-item {
   display: flex;
 }
+.buttons-list-item:not(:last-child) {
+  margin-right: 8px;
+}
 .buttons-list-item-btn {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  /* margin-left: auto;
+  margin-right: auto;*/
   padding: 6.1px 22.5px;
+  border-color: #f5f4fa;
+  /* box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);*/
 }
-.buttons-list-item-btn:not(:last-child) {
-  margin-right: 8.21px;
+.buttons-list-item {
+  /*box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);*/
+  border-radius: 4px;
 }
+
 .buttons-list-item-btn {
   text-align: center;
   font-family: var(--text-font);
@@ -416,9 +428,6 @@ img {
 .buttons-list-item-btn:focus {
   color: var(--text-color-accent);
   background-color: var(--link-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
 }
 
 /*==========End Button======*/
@@ -454,6 +463,8 @@ img {
 .projects-list {
   display: flex;
   flex-wrap: wrap;
+  margin-right: -30px;
+  margin-bottom: -30px;
 }
 .projects-list-item:nth-child(3n) {
   margin-right: 0;
@@ -463,10 +474,17 @@ img {
 }
 .projects-list-item {
   margin-right: 30px;
-  margin-bottom: 30.5px;
+  margin-bottom: 30px;
+  background: var(--background-color);
+ 
+   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.projects-img {
-  margin-bottom: 20.34px;
+
+.projects-img-text{
+  padding: 20px 24px;
+}
+.projects{
+  padding-bottom: 85px;
 }
 
 /*===========End Projects===========*/
